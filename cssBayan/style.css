@@ -38,6 +38,10 @@ input:checked + label img{
     transition: transform .5s;
     transform: rotate(90deg);
 }
+label:hover img{
+    transition: transform .5s;
+    transform: rotate(90deg);
+}
 label:hover + .meme_content {
     max-height: 500vh;
 }

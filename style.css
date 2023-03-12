@@ -1,0 +1,36 @@
+.wrapper{
+    width: 500px;
+    background-color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    color: red;
+}
+body {
+    background-color: aqua;
+}
+label {
+    display:block;
+    transition: color 1s;
+    text-align: center;
+    background-color: blue;
+    cursor: pointer;
+}
+label:hover + .meme_content {
+    max-height: 500vh;
+}
+.meme_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s;
+}
+input:checked + label + .meme_content {
+    max-height: 500vh;
+}
+img {
+    width: 100%;
+}

@@ -1,0 +1,61 @@
+.wrapper{
+    width: 50vw;
+    background-color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    color: blue;
+}
+body {
+    background-color: black;
+}
+label {
+    display:flex;
+    transition: color 1s;
+    background-color: aqua;
+    cursor: pointer;
+    height: 10vh;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: solid;
+    color: grey;
+}
+label img {
+    display: inline-block;
+    height: 3vh;
+}
+label:hover{
+    color:black;
+}
+input:checked + label img{
+    transition: transform .5s;
+    transform: rotate(90deg);
+}
+label:hover img{
+    transition: transform .5s;
+    transform: rotate(90deg);
+}
+label:hover + .meme_content {
+    max-height: 100vh;
+}
+.meme_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s;
+}
+input:checked + label + .meme_content {
+    max-height: 100vh;
+}
+img {
+    width: 100%;
+}
+.icon{
+    padding-right: 1vw;
+}

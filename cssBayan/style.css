@@ -11,21 +11,32 @@ input {
     display: none;
 }
 input:checked + label {
-    color: red;
+    color: blue;
 }
 body {
-    background-color: aqua;
+    background-color: black;
 }
 label {
     display:flex;
     transition: color 1s;
-    text-align: center;
-    background-color: blue;
+    background-color: aqua;
     cursor: pointer;
     height: 10vh;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     border-bottom: solid;
+    color: grey;
+}
+label img {
+    display: inline-block;
+    height: 3vh;
+}
+label:hover{
+    color:black;
+}
+input:checked + label img{
+    transition: transform .5s;
+    transform: rotate(90deg);
 }
 label:hover + .meme_content {
     max-height: 500vh;
@@ -40,4 +51,7 @@ input:checked + label + .meme_content {
 }
 img {
     width: 100%;
+}
+.icon{
+    padding-right: 1vw;
 }

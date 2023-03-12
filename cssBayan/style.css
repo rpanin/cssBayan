@@ -43,15 +43,15 @@ label:hover img{
     transform: rotate(90deg);
 }
 label:hover + .meme_content {
-    max-height: 500vh;
+    max-height: 100vh;
 }
 .meme_content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 3s;
+    transition: max-height 1.5s;
 }
 input:checked + label + .meme_content {
-    max-height: 500vh;
+    max-height: 100vh;
 }
 img {
     width: 100%;

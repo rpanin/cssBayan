@@ -1,7 +1,11 @@
 .wrapper{
-    width: 500px;
+    width: 50vw;
     background-color: white;
     margin: 0 auto;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
 }
 input {
     display: none;
@@ -13,13 +17,17 @@ body {
     background-color: aqua;
 }
 label {
-    display:block;
+    display:flex;
     transition: color 1s;
     text-align: center;
+    background-color: blue;
+    cursor: pointer;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid;
 }
 label:hover + .meme_content {
-    transition-property: max-height;
-    transition-duration: 3s;
     max-height: 500vh;
 }
 .meme_content {
@@ -29,9 +37,7 @@ label:hover + .meme_content {
 }
 input:checked + label + .meme_content {
     max-height: 500vh;
-    transition-property: max-height;
-    transition-duration: 3s;
 }
 img {
-    width: 500px;
+    width: 100%;
 }
